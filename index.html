@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Skranji" rel="stylesheet">
+
+    <title>Crytal Game</title>
+
+</head>
+
+<body>
+
+<!-- Header section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12"
+                <div class="page-header">
+                    <h1 class="text-center" >CRYSTAL COLLECTOR</h1>
+                    <h3 class="text-center"><p>Can you guess the MAGIC NUMBER?</p><p>Play below to find out.</p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+<!-- Rules of the game -->
+<!-- used a panel with a header for formatting -->    
+		
+        <div class = "row">
+            <div class = "col-lg-12">
+                <div class = "panel panel-warning">
+                    <div class = "panel-heading">
+                    <h3 class = "panel-title">Rules of the Game</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                </div>
+                <div = class = "panel-body">
+                    
+                    <p>A random number will be assigned to start the game.<span>"Magic Number"</span></p>
+                    <p>The 4 crystals below will each be assigned a random number to start the game.</p>
+
+                    <p id="red">Red</p>
+                    <p id="blue">Blue</p>
+                    <p id="green">Green</p>
+                    <p id="purple">Purple</p>
+
+                    <p>Click one of the 4 crystal to add to your score.</p>
+                    <p>To win, match the score displayed.</p>
+                    <p>You lose if, you exceed the displayed number.</p>
+                    
+                </div>         
+                </div>
+            </div>
+        </div>
+
+<!-- rows and colums to set up the top game panel -->
+<!-- this should display wins - magic number - losses -->
+<!-- 
+<div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div> -->
+
+        <div class = "wrapper">
+            <div class = "panel-heading">
+                <div class = "panel-body">
+                    <div class = "text-center">
+                        <div class = "row">
+                            <div class = "col-md-4">
+                                <div class = "text-left">
+                                    <div class = "text-center">
+                                    <h3>WINS</h3>
+                                    <h3 id = "wins">0</h3>
+                                    </div>
+                                </div>
+                            </div> 
+                        <div class = "col-md-4">
+                            <div class = "text-center">
+                                <h3>Magic Number</h3>
+                                <h3 id = "magicNumber">0</h3>
+                            </div>
+                        </div>
+                        <div class = "col-md-4">
+                            <div class = "text-right">
+                                <div class = "text-center">
+                                    <h3>Losses</h3>
+                                    <h3 id = "losses">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+  <!-- This is the users total  -->
+            <div class = "row">
+                <div class = "col-lg-12">
+                    <div class = "panel panel-default">
+                        <div class = "panel-body text-center" id = "totalHolder">
+                            <h3 id = "total">0</h3> 
+                        </div>
+                    </div>  
+                </div>
+                </div>
+                </div>
+            </div>
+            
+    
+
+<!-- This will be the last row set up on the page -->
+<!-- This row will display the 4 crytals -->
+<!-- Click function will be established in game.js -->
+            <div class = "row">
+                <div class = "col-xs-6 col-sm-3" id = "redCrystal">
+                    <a href = "#" class = "thumbnail">
+                    <img src = "assets/images/rd.ico" class="img-responsive" alt="Responsive image">
+                    </a>
+                </div>
+                <div class = "col-xs-6 col-sm-3" id = "blueCrystal">
+                    <a href = "#" class = "thumbnail">
+                    <img src = "assets/images/blu.png" class="img-responsive" alt="Responsive image">
+                    </a>
+                </div>
+                <div class = "col-xs-6 col-sm-3" id = "greenCrystal">
+                    <a href = "#" class = "thumbnail">
+                    <img src = "assets/images/grn.ico" class="img-responsive" alt="Responsive image">
+                    </a>
+                </div>
+                <div class = "col-xs-6 col-sm-3" id = "purpleCrystal">
+                    <a href = "#" class = "thumbnail">
+                    <img src = "assets/images/prp.png" class="img-responsive" alt="Responsive image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
